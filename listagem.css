@@ -1,0 +1,144 @@
+:root {
+    --primary-color: #4CAF50;
+    --danger-color: #f44336;
+    --background-color: #f9f9f9;
+    --card-background: #fff;
+    --text-color: #333;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 24px;
+    color: var(--primary-color);
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .btn-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #45a049;
+  }
+  
+  .btn-danger {
+    background-color: var(--danger-color);
+    color: #fff;
+  }
+  
+  .btn-danger:hover {
+    background-color: #e53935;
+  }
+  
+  .form-section {
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    gap: 10px;
+  }
+  
+  form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  form button {
+    flex: 0;
+  }
+  
+  .product-list-section {
+    margin-top: 20px;
+  }
+  
+  .product-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .product-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: var(--card-background);
+    box-shadow: var(--box-shadow);
+  }
+  
+  .product-card h3 {
+    margin: 0;
+    font-size: 18px;
+    color: var(--text-color);
+  }
+  
+  .product-card p {
+    margin: 0;
+    color: #666;
+  }
+  
+  .product-card .actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .product-card button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  
+  .product-card .edit {
+    background-color: var(--primary-color);
+    color: #fff;
+  }
+  
+  .product-card .edit:hover {
+    background-color: #45a049;
+  }
+  
+  .product-card .delete {
+    background-color: var(--danger-color);
+    color: #fff;
+  }
+  
+  .product-card .delete:hover {
+    background-color: #e53935;
+  }
+  
